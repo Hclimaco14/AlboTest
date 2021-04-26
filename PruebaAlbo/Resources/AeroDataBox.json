@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "icao": "EGLC",
+            "iata": "LCY",
+            "name": "London, London City",
+            "shortName": "City",
+            "municipalityName": "London",
+            "location": {
+                "lat": 51.5053,
+                "lon": 0.055277
+            },
+            "countryCode": "GB"
+        },
+        {
+            "icao": "EGKB",
+            "iata": "BQH",
+            "name": "London, London Biggin Hill",
+            "shortName": "Biggin Hill",
+            "municipalityName": "London",
+            "location": {
+                "lat": 51.3308,
+                "lon": 0.032499
+            },
+            "countryCode": "GB"
+        }
+    ]
+}

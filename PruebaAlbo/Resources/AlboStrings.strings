@@ -1,0 +1,19 @@
+/* 
+  AlboStrings.strings
+  PruebaAlbo
+
+  Created by Hector Climaco on 23/04/21.
+  
+*/
+
+//MARK: Search Radius Module
+"TITLE_SEARCH" = "Airport Finder";
+"DESCRIPTION_SEARCH" = "Radio en Kilometros";
+"BUTTON_SEARCH" = "Buscar";
+
+//MARK: Alert
+"ALERT_ERROR" = "Advertencia";
+"ALERT_ACEPT" = "Aceptar";
+"LOCATION_TITLE_ALERT" = "Permitir ubicación";
+"LOCATION_BODY_ALERT" = "La utilizaremos para brindarte una mejor experiencia en la app.";
+"GO_TO_CONFIGURATION" = "Ir a Configuración";
