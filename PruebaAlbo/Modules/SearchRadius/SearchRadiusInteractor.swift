@@ -18,7 +18,7 @@ class SearchRadiusInteractor: SearchRadiusInteractorInputProtocol {
     func serchAirport(sender: Any?) {
         guard let distance = sender as? Int else { return }
         LocationAlbo.share.validateLocationPermissions() { (location) in
-            self.services.airportSearch(distance: distance, location: location, loadFromFile: true){ (response, error) in
+            self.services.airportSearch(distance: distance, location: location, loadFromFile: false){ (response, error) in
                 if let res  =  response {
                     self.presenter?.airportResult(result: res,location: location)
                 }

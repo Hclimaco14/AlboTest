@@ -8,5 +8,5 @@
 import Foundation
 
 internal struct Constants {
-    static let x_rapidapi_key = "0124d3f871msh0b84b65667a9732p162a9bjsn4c1bb364bc07"
+    static let x_rapidapi_key = "5c6f644f03msh6bf92a915f09b6ap106979jsn1e636fa0aba2"
 }

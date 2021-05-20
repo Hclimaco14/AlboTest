@@ -24,7 +24,7 @@ internal class ServicesManager {
         }
         
         let maximunAirports = 16
-        let service = "/airports/search/location/\(location?.coordinate.latitude ?? 0)/\(location?.coordinate.longitude ?? 0)/km/\(distance)/\(maximunAirports)?withFlightInfoOnly=0"
+        let service = "/airports/search/location/\(location?.coordinate.latitude ?? 0)/\(location?.coordinate.longitude ?? 0)/km/\(distance)/\(maximunAirports)?withFlightInfoOnly=false"
         
         guard let request = NetworkUtils.createRequest(urlString: service, HTTPMethod: .get) else { return }
         
