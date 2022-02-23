@@ -38,7 +38,7 @@ public class Mapper<T:Codable> {
     }
   }
   
-  public func map(JSONData: Data?) -> T? {
+  private func map(JSONData: Data?) -> T? {
     DispatchQueue.global().sync {
       guard let jsonData = JSONData else { return nil }
       let decoder = JSONDecoder()
@@ -47,7 +47,7 @@ public class Mapper<T:Codable> {
     }
   }
   
-  public func map(JSONString: String?) -> T? {
+  private func map(JSONString: String?) -> T? {
     DispatchQueue.global().sync {
       guard let jsonString = JSONString else { return nil }
       guard let JSONObject = jsonString.data(using: .utf8) else { return nil }
@@ -57,7 +57,7 @@ public class Mapper<T:Codable> {
     }
   }
   
-  public func map(JSONObject: [String:Any]?) -> T? {
+  private func map(JSONObject: [String:Any]?) -> T? {
     DispatchQueue.global().sync {
       guard let JSONObj = JSONObject else { return nil }
       guard let JSON = JsonUtils.JSONToData(JSON: JSONObj) else { return nil }
@@ -85,7 +85,7 @@ public class Mapper<T:Codable> {
     }
   }
   
-  public func mapArray(JSONData: Data?) -> [T]? {
+  private func mapArray(JSONData: Data?) -> [T]? {
     DispatchQueue.global().sync {
       let decoder = JSONDecoder()
       guard let jsonData = JSONData else { return nil }
@@ -94,7 +94,7 @@ public class Mapper<T:Codable> {
     }
   }
   
-  public func mapArray(JSONString: String?) -> [T]? {
+  private func mapArray(JSONString: String?) -> [T]? {
     DispatchQueue.global().sync {
       guard let jsonString = JSONString else { return nil }
       guard let JSONObject = jsonString.data(using: .utf8) else { return nil }
@@ -104,7 +104,7 @@ public class Mapper<T:Codable> {
     }
   }
   
-  public func mapArray(JSONObject: [String:Any]?) -> [T]? {
+  private func mapArray(JSONObject: [String:Any]?) -> [T]? {
     DispatchQueue.global().sync {
       guard let JSONObj = JSONObject else { return nil }
       guard let JSON = JsonUtils.JSONToData(JSON: JSONObj) else { return nil }

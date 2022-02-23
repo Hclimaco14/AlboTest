@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
-        LocationAlbo.share.locationManager.requestWhenInUseAuthorization()
+//        LocationAlbo.Share.locationManager.requestWhenInUseAuthorization()
         
         return true
     }

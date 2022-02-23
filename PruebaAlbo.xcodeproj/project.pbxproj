@@ -20,7 +20,7 @@
 		74DA2EBC263394680060ACC3 /* SearchRadiusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DA2EB6263394680060ACC3 /* SearchRadiusView.xib */; };
 		74DA2EC3263394930060ACC3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA2EC1263394930060ACC3 /* AppCoordinator.swift */; };
 		74DA2EC4263394930060ACC3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA2EC2263394930060ACC3 /* Coordinator.swift */; };
-		74DA2ECD263395990060ACC3 /* LocationAlbo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA2ECC263395990060ACC3 /* LocationAlbo.swift */; };
+		74DA2ECD263395990060ACC3 /* DeviceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA2ECC263395990060ACC3 /* DeviceLocation.swift */; };
 		74DA2ED5263395CC0060ACC3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DA2ED4263395CC0060ACC3 /* Extensions.swift */; };
 		74DA2EDE263396210060ACC3 /* AlboStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74DA2EDD263396210060ACC3 /* AlboStrings.strings */; };
 		74F9F07F2634803200E4D281 /* ListAirportsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F9F0792634803200E4D281 /* ListAirportsPresenter.swift */; };
@@ -86,7 +86,7 @@
 		74DA2EB6263394680060ACC3 /* SearchRadiusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchRadiusView.xib; sourceTree = "<group>"; };
 		74DA2EC1263394930060ACC3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		74DA2EC2263394930060ACC3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		74DA2ECC263395990060ACC3 /* LocationAlbo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlbo.swift; sourceTree = "<group>"; };
+		74DA2ECC263395990060ACC3 /* DeviceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLocation.swift; sourceTree = "<group>"; };
 		74DA2ED4263395CC0060ACC3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		74DA2EDD263396210060ACC3 /* AlboStrings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = AlboStrings.strings; sourceTree = "<group>"; };
 		74F9F0792634803200E4D281 /* ListAirportsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAirportsPresenter.swift; sourceTree = "<group>"; };
@@ -230,7 +230,7 @@
 		74DA2ECB263395530060ACC3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				74DA2ECC263395990060ACC3 /* LocationAlbo.swift */,
+				74DA2ECC263395990060ACC3 /* DeviceLocation.swift */,
 				74DA2ED4263395CC0060ACC3 /* Extensions.swift */,
 				74F9F09A263692A100E4D281 /* Mapper.swift */,
 				74F9F09F263692D800E4D281 /* JsonUtils.swift */,
@@ -452,7 +452,7 @@
 				74F9F0DA2636B65D00E4D281 /* AirportCell.swift in Sources */,
 				74DA2EB7263394680060ACC3 /* SearchRadiusPresenter.swift in Sources */,
 				74F9F0952634805200E4D281 /* MapAirportsView.swift in Sources */,
-				74DA2ECD263395990060ACC3 /* LocationAlbo.swift in Sources */,
+				74DA2ECD263395990060ACC3 /* DeviceLocation.swift in Sources */,
 				74F9F0802634803200E4D281 /* ListAirportsRouter.swift in Sources */,
 				74F9F07F2634803200E4D281 /* ListAirportsPresenter.swift in Sources */,
 				74F9F0932634805200E4D281 /* MapAirportsProtocols.swift in Sources */,

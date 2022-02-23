@@ -25,8 +25,9 @@ extension SearchRadiusPresenter: SearchRadiusPresenterProtocol {
     func viewDidLoad() {
     }
     
-    func serchAirport(sender: Any?) {
-        interactor?.serchAirport(sender: sender)
+    func serchAirport(distance: Int, location: CLLocation?) {
+        
+        interactor?.serchAirport(distance: distance, location: location)
         
     }
     

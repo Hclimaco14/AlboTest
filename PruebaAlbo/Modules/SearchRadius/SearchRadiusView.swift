@@ -28,6 +28,10 @@ class SearchRadiusView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        DeviceLocation.Share.changeAuthorization = {
+            _ = DeviceLocation.validateLocationPermissions(viewController: self)
+        }
+        DeviceLocation.Share.configure()
     }
     
     func configureView() {
@@ -51,7 +55,14 @@ class SearchRadiusView: UIViewController {
     
     
     @IBAction func searchAction(_ sender: Any) {
-        presenter?.serchAirport(sender: Int(radiusSlider.value))
+        if DeviceLocation.validateLocationPermissions() {
+            DeviceLocation.getLocation() { loc in
+            let radius = Int(radiusSlider.value)
+            presenter?.serchAirport(distance: radius, location: loc)
+            }
+        } else {
+            DeviceLocation.validateLocationPermissions(viewController: self)
+        }
     }
     
 }

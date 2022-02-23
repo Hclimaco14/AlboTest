@@ -28,7 +28,7 @@ protocol SearchRadiusPresenterProtocol: class {
     var router: SearchRadiusRouterProtocol? { get set }
     
     func viewDidLoad()
-    func serchAirport(sender:Any?)
+    func serchAirport(distance: Int, location: CLLocation?)
     func showLoading()
     func hideLoading()
 }
@@ -44,7 +44,7 @@ protocol SearchRadiusInteractorOutputProtocol: class {
 protocol SearchRadiusInteractorInputProtocol: class {
     // PRESENTER -> INTERACTOR
     var presenter: SearchRadiusInteractorOutputProtocol? { get set }
-    func serchAirport(sender:Any?)
+    func serchAirport(distance: Int, location: CLLocation?)
     func showLoading()
     func hideLoading()
 }
